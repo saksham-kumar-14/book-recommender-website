@@ -1,0 +1,66 @@
+.book_image{
+    width: 200px;
+    height: 320px;
+    transition: 0.6s;
+    border-radius: 1.5rem;
+}.book_image:hover{
+    position: absolute; 
+    width: 220px;
+    height: 352px;
+    border-radius : 0px; 
+}
+
+.book_title{
+    cursor: pointer;
+}
+
+.book_section{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    margin: 2rem; 
+    padding: 2rem; 
+    cursor: pointer; 
+    transition: 0.6s;
+    border-radius: 4rem;
+    height: 350px;  
+    box-shadow: 20px 15px 15px rgb(220,220,220);
+}.book_section:hover{
+    background-color: rgb(223, 245, 252);
+    box-shadow: 25px 20px 20px rgb(220,220,220); 
+}
+.book_section_1_even{
+    display: flex;
+    justify-content: flex-start;
+}
+.book_section_1_odd{
+    display: flex;
+    justify-content: flex-end;
+}
+.book_section_2{
+    display: flex;
+    align-items: center; 
+    font-size: 1.5rem;
+    position: relative;
+}
+.book_title{
+    transition: 0.6s;
+}
+.book_title:hover{
+    text-decoration: underline;
+}
+.book_title, .book_id{
+    margin: 0px 0.5rem;
+}
+
+@media only screen and (max-width: 600px){
+    .book_image:hover{
+        position: relative; 
+    }
+    .book_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .book_section{
+        height: 400px;
+    }
+}

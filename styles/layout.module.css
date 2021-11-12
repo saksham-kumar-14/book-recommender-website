@@ -1,0 +1,49 @@
+.container{   
+    padding: 5rem 2rem;
+} 
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: rgb(30,30,30);
+    width: 100%;
+}
+.links{
+    margin: 1rem 1.8rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: lightskyblue;
+    transition : 0.5s; 
+}.links:hover{
+    color: rgb(71, 127, 231);
+}
+.navbar_text{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 30rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(225,225,225);
+}
+
+@media only screen and (max-width: 1100px) {
+    /*.container {
+      background-color: lightblue;
+    }*/
+
+    .navbar{
+        flex-direction: column;
+    }
+    .links{
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem; 
+    }.navbar_text{
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .container{
+        padding: 13rem 2rem;
+    }
+  }
