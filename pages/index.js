@@ -7,7 +7,7 @@ const Home=({recommended_books_data})=>{
   return(
     <>
       <Head>
-        <title>Next.js Practice</title>
+        <title>Book Recommendations</title>
       </Head>
       <h1 className={styles.heading}>Gonna be recommending some books!</h1> 
       <Book_list recommended_books_data={recommended_books_data} />
